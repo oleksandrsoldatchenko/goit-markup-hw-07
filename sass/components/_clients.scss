@@ -1,0 +1,25 @@
+.client-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-button {
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgb(175, 177, 184);
+    fill: rgb(175, 177, 184);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-button:hover,
+.client-button:focus,
+.client-button:active {
+    border: 1px solid var(--accent-text-color);
+    fill: var(--accent-text-color);
+    cursor: pointer;
+}

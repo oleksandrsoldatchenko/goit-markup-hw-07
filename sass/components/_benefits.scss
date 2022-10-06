@@ -1,0 +1,33 @@
+// benefits
+.benefits-cont {
+    padding-bottom: 0;
+}
+
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefit-item {
+    width: 270px;
+}
+
+.benefit-symbol {
+    display: block;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    fill: currentColor;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--title-text-colour);
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+// benefits
