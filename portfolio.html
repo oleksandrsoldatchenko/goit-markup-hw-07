@@ -5,36 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфоліо</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-     <header class="header">
-        <div class="container header-main-container">
-            <nav class="main-nav">
-            <div class="logo-and-nav">
-                <a class="logo-header" href="./index.html">Web<span class="logo-accent">Studio</span></a>
-                <nav class="nav">
-                    <ul class="site-nav list">
-                        <li class="item"><a href="./index.html" class="link">Студія</a></li>
-                        <li class="item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
-                        <li class="item"><a href="" class="link">Контакти</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <header class="header">
+        <div class="header__container container">
+            <nav class="header__nav">
+                <div class="nav__container">
+                    <a class="header__logo" href="./index.html">Web<span class="header__logo-accent">Studio</span></a>
+                    <nav class="nav">
+                        <ul class="nav__links list">
+                            <li class="item"><a href="./index.html" class="link">Студія</a></li>
+                            <li class="item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
+                            <li class="item"><a href="" class="link">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </nav>
-            <div class="main-cont">
-                <a class="link-contact contact-item" href="mailto:info@devstudio.com">
-                    <svg class="contact-icon" width="16" height="12">
-                    <use href="./images/symbol-defs.svg#contact-mail"></use>
+            <div class="header__cont">
+                <a class="cont__link cont__item" href="mailto:info@devstudio.com">
+                    <svg class="cont__icon" width="16" height="12">
+                        <use href="./images/symbol-defs.svg#contact-mail"></use>
                     </svg>info@devstudio.com
                 </a>
-                <a class="link-contact" href="tel:+380961111111">
-                    <svg class="contact-icon" width="10" height="16">
-                    <use href="./images/symbol-defs.svg#contact-phone"></use>
+                <a class="cont__link" href="tel:+380961111111">
+                    <svg class="cont__icon" width="10" height="16">
+                        <use href="./images/symbol-defs.svg#contact-phone"></use>
                     </svg>+38 096 111 11 11
                 </a>
             </div>

@@ -335,27 +335,36 @@ body {
   margin: 0 auto;
 }
 
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--title-text-colour);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .header {
   border-bottom: 1px solid #ECECEC;
 }
 
-.header-main-container {
+.header__container {
   display: flex;
   justify-content: space-between;
 }
 
-.main-nav {
+.header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.logo-and-nav {
+.nav__container {
   display: flex;
   align-items: center;
 }
 
-.logo-header {
+.header__logo {
   text-decoration: none;
   font-family: "Raleway";
   font-weight: 700;
@@ -365,21 +374,21 @@ body {
   margin-right: 93px;
 }
 
-.logo-accent {
+.header__logo-accent {
   color: var(--logo-text-color);
 }
 
-.main-cont {
+.header__cont {
   display: flex;
   align-items: center;
 }
 
 /* Site nav */
-.site-nav {
+.nav__links {
   display: flex;
 }
 
-.site-nav .item:not(:last-child) {
+.nav__links .item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -394,6 +403,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav .link:focus, .nav .link:hover {
+  color: var(--accent-text-color);
 }
 
 .nav .current {
@@ -415,17 +427,11 @@ body {
   bottom: -1px;
 }
 
-.nav .link:hover,
-.nav .link:focus,
-.nav .link:active {
-  color: var(--accent-text-color);
-}
-
-.contact-item {
+.cont__item {
   margin-right: 50px;
 }
 
-.link-contact {
+.cont__link {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -436,25 +442,21 @@ body {
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.link-contact:hover,
-.link-contact:focus,
-.link-contact:active {
+.cont__link:focus, .cont__link:hover {
   color: var(--accent-text-color);
 }
 
-.contact-icon {
+.cont__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-/* hero */
-.head {
-  /* background-color: var(--footer-brt-color); */
+.hero {
+  background-color: var(--footer-brt-color);
   padding: 200px 0;
 }
 
-.overlay {
+.hero__overlay {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -465,7 +467,7 @@ body {
   background-size: cover;
 }
 
-.head-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -476,12 +478,12 @@ body {
   margin-bottom: 30px;
 }
 
-.head-btn {
+.hero__btn {
   display: flex;
   justify-content: center;
 }
 
-.btn-blue {
+.btn__item {
   display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
@@ -497,16 +499,12 @@ body {
   text-align: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.btn-blue:hover,
-.btn-blue:focus,
-.btn-blue:active {
+.btn__item:focus, .btn__item:hover, .btn__item:active {
   color: var(--accent-text-color);
   background-color: var(--secondary-bgr-color);
   cursor: pointer;
 }
 
-/* Модальне вікно */
 .backdrop {
   position: fixed;
   top: 0;
@@ -514,7 +512,6 @@ body {
   width: 100%;
   height: 100%;
   opacity: 1;
-  /* transform: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -564,13 +561,10 @@ body {
   background-color: var(--primary-bgr-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.svg-close-btn:hover,
-.svg-close-btn:focus {
+.svg-close-btn:focus, .svg-close-btn:hover {
   fill: var(--accent-text-color);
 }
 
-/* ДЗ 6 */
 /* Форма в модальному вікні */
 .modal-form-title {
   font-weight: 700;
@@ -616,7 +610,6 @@ body {
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-input:focus {
   border-color: var(--accent-text-color);
 }
@@ -648,7 +641,6 @@ body {
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-text-area:focus {
   border-color: var(--accent-text-color);
 }
@@ -738,22 +730,20 @@ body {
 }
 
 /* Кінець форми в модальному вікні */
-/* ДЗ 6 */
-/* Кінець модального вікна */
-.benefits-cont {
+.benefits {
   padding-bottom: 0;
 }
 
-.benefits-list {
+.benefits__list {
   display: flex;
   justify-content: space-between;
 }
 
-.benefit-item {
+.benefit__item {
   width: 270px;
 }
 
-.benefit-symbol {
+.benefit__icon {
   display: block;
   padding: 25px 100px;
   margin-bottom: 30px;
@@ -762,7 +752,7 @@ body {
   fill: currentColor;
 }
 
-.title {
+.benefit__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -771,26 +761,17 @@ body {
   margin-bottom: 10px;
 }
 
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  color: var(--title-text-colour);
-  text-align: center;
-  margin-bottom: 50px;
-}
-
 .functions-list {
   display: flex;
   justify-content: space-between;
 }
 
 /* напівпрозорий нижній борт з описом функцій */
-.function-item {
+.function__item {
   position: relative;
 }
 
-.functions-list-text {
+.function__descr {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -865,10 +846,7 @@ body {
   background-color: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.sn-team-link:hover,
-.sn-team-link:focus,
-.sn-team-link:active {
+.sn-team-link:hover, .sn-team-link:focus {
   background-color: var(--accent-text-color);
   fill: var(--hero-text-color);
   cursor: pointer;
@@ -882,24 +860,20 @@ body {
 .client-button {
   width: 170px;
   height: 92px;
-  border: 1px solid rgb(175, 177, 184);
-  fill: rgb(175, 177, 184);
+  border: 1px solid #afb1b8;
+  fill: #afb1b8;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.client-button:hover,
-.client-button:focus,
-.client-button:active {
+.client-button:focus, .client-button:hover {
   border: 1px solid var(--accent-text-color);
   fill: var(--accent-text-color);
   cursor: pointer;
 }
 
-/* portfolio page */
 /* portfolio buttons */
 .portfolio-btn-cont {
   display: flex;
@@ -910,6 +884,10 @@ body {
 .portfolio-nav {
   display: inline-flex;
   margin-right: 8px;
+}
+
+.portfolio-btn-cont .portfolio-nav:last-child {
+  margin-right: 0px;
 }
 
 .btn-gray {
@@ -926,13 +904,7 @@ body {
   letter-spacing: 0.03em;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-btn-cont .portfolio-nav:last-child {
-  margin-right: 0px;
-}
-
-.btn-gray:hover,
-.btn-gray:focus {
+.btn-gray:hover, .btn-gray:focus {
   color: var(--hero-text-color);
   background-color: var(--accent-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -954,10 +926,7 @@ body {
   margin-bottom: 30px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-list:hover,
-.portfolio-list:focus,
-.portfolio-list:active {
+.portfolio-list:hover, .portfolio-list:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -1023,7 +992,6 @@ body {
   line-height: 1.88;
 }
 
-/* footer */
 .head-footer {
   background-color: var(--footer-brt-color);
   padding: 60px 0;
@@ -1063,10 +1031,7 @@ body {
   color: var(--hero-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-adress:hover,
-.footer-adress:focus,
-.footer-adress:active {
+.footer-adress:focus, .footer-adress:hover {
   color: var(--accent-text-color);
   cursor: pointer;
 }
@@ -1084,10 +1049,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-contact:hover,
-.footer-contact:focus,
-.footer-contact:active {
+.footer-contact:focus, .footer-contact:hover {
   color: var(--hero-text-color);
   cursor: pointer;
 }
@@ -1130,14 +1092,11 @@ body {
   fill: var(--hero-text-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.sn-link:hover,
-.sn-link:focus {
+.sn-link:focus, .sn-link:hover {
   background-color: var(--accent-text-color);
   cursor: pointer;
 }
 
-/* ДЗ 6 */
 /* Форма підписки на розсилку */
 .footer-subscribe {
   margin-left: auto;
@@ -1200,13 +1159,10 @@ body {
   fill: var(--hero-text-color);
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1), fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-btn:hover,
-.footer-btn:focus {
+.footer-btn:focus, .footer-btn:hover {
   background-color: var(--secondary-bgr-color);
   fill: var(--accent-text-color);
   color: var(--accent-text-color);
 }
 
-/* Кінець форми підписки на розсилку */
-/* ДЗ 6 *//*# sourceMappingURL=main.css.map */
+/* Кінець форми підписки на розсилку *//*# sourceMappingURL=main.css.map */
