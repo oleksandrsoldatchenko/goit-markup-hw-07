@@ -21,7 +21,14 @@ html {
     box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -71,7 +78,7 @@ body {
 .main-nav {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .logo-and-nav {
@@ -191,12 +198,10 @@ body {
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-),
-    url(../images/hero-img.jpg);
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero-img.jpg);
 
     background-repeat: no-repeat;
     background-position: center;
@@ -217,7 +222,7 @@ body {
 
 .head-btn {
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 
 .btn-blue {
@@ -238,7 +243,7 @@ body {
     text-align: center;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-blue:hover,
@@ -395,7 +400,7 @@ body {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus + .modal-icon {
+.form-input:focus+.modal-icon {
     fill: var(--accent-text-color);
 }
 
@@ -466,7 +471,7 @@ body {
     vertical-align: middle;
 }
 
-.privacy-input:checked + .privacy .modal-check {
+.privacy-input:checked+.privacy .modal-check {
     border: none;
     fill: var(--accent-text-color);
 }
@@ -612,7 +617,7 @@ body {
     background-color: transparent;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sn-team-link:hover,
@@ -638,7 +643,7 @@ body {
     justify-content: center;
     align-items: center;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-button:hover,
@@ -757,7 +762,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     fill: var(--hero-text-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sn-link:hover,
@@ -887,7 +892,7 @@ body {
     letter-spacing: 0.03em;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-btn-cont .portfolio-nav:last-child {
@@ -916,12 +921,12 @@ body {
 .portfolio-list {
     background-color: var(--hero-text-color);
     box-shadow: transparent;
-    
+
     margin-right: 30px;
     margin-bottom: 30px;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list:hover,
@@ -982,7 +987,7 @@ body {
 }
 
 .portfolio-section .portfolio-list:nth-child(n + 7) {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .portfolio-list-title {
