@@ -89,9 +89,9 @@
     bottom: -1px;
 }
 
-.cont__item {
-    margin-right: 50px;
-}
+// .cont__item {
+//     margin-right: 50px;
+// }
 
 .cont__link {
     display: flex;
@@ -108,6 +108,10 @@
     &:hover {
         color: var(--accent-text-color);
     }
+}
+
+.header__cont .cont__link:not(:last-child) {
+    margin-right: 50px;
 }
 
 .cont__icon {

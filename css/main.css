@@ -427,10 +427,6 @@ body {
   bottom: -1px;
 }
 
-.cont__item {
-  margin-right: 50px;
-}
-
 .cont__link {
   display: flex;
   align-items: center;
@@ -444,6 +440,10 @@ body {
 }
 .cont__link:focus, .cont__link:hover {
   color: var(--accent-text-color);
+}
+
+.header__cont .cont__link:not(:last-child) {
+  margin-right: 50px;
 }
 
 .cont__icon {
@@ -736,7 +736,7 @@ body {
 
 .benefits__list {
   display: flex;
-  justify-content: space-between;
+  grid-gap: 30px;
 }
 
 .benefit__item {
@@ -763,7 +763,7 @@ body {
 
 .functions-list {
   display: flex;
-  justify-content: space-between;
+  grid-gap: 30px;
 }
 
 /* напівпрозорий нижній борт з описом функцій */
@@ -792,7 +792,7 @@ body {
 
 .team-list {
   display: flex;
-  justify-content: space-between;
+  grid-gap: 30px;
 }
 
 .team-card {
@@ -854,7 +854,7 @@ body {
 
 .client-list {
   display: flex;
-  justify-content: space-between;
+  grid-gap: 30px;
 }
 
 .client-button {
@@ -916,14 +916,13 @@ body {
 .portfolio-section {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px 30px;
 }
 
 /* portfolio list */
 .portfolio-list {
   background-color: var(--hero-text-color);
   box-shadow: transparent;
-  margin-right: 30px;
-  margin-bottom: 30px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list:hover, .portfolio-list:focus {

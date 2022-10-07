@@ -4,7 +4,7 @@
 
 .benefits__list {
     display: flex;
-    justify-content: space-between;
+    grid-gap: 30px;
 }
 
 .benefit__item {
